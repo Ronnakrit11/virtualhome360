@@ -5,11 +5,7 @@ import { Html, Preload, OrbitControls } from '@react-three/drei'
 import { Popconfirm } from 'antd'
 
 const store = [
-  { name: 'outside', color: 'lightpink', position: [10, 0, -15], url: '/2294472375_24a3b8ef46_o.jpg', link: 1 },
-  { name: 'inside', color: 'lightblue', position: [15, 0, 0], url: '/Photosphere1.jpg', link: 2 },
-  { name: 'garden view', color: 'lightgreen', position: [0, 0, 15], url: '/new.jpg', link: 3 },
-  { name: 'new view', color: 'lightyellow', position: [-15, 0, 0], url: '/new1.jpg', link: 4 },
-  { name: 'panorama view', color: 'lightcoral', position: [-10, 0, -10], url: '/newnew.jpg', link: 5 },
+
   { name: 'additional view', color: 'lightseagreen', position: [0, 10, 0], url: '/new2.jpg', link: 0 }
 ]
 
