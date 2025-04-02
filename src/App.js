@@ -5,12 +5,13 @@ import { Html, Preload, OrbitControls } from '@react-three/drei'
 import { Popconfirm } from 'antd'
 
 const store = [
+  { name: 'additional view', color: 'lightseagreen', position: [0, 10, 0], url: '/new2.jpg', link: 0 },
   { name: 'outside', color: 'lightpink', position: [10, 0, -15], url: '/2294472375_24a3b8ef46_o.jpg', link: 1 },
   { name: 'inside', color: 'lightblue', position: [15, 0, 0], url: '/Photosphere1.jpg', link: 2 },
 
   { name: 'new view', color: 'lightyellow', position: [-15, 0, 0], url: '/new1.jpg', link: 4 },
-  { name: 'panorama view', color: 'lightcoral', position: [-10, 0, -10], url: '/newnew.jpg', link: 5 },
-  { name: 'additional view', color: 'lightseagreen', position: [0, 10, 0], url: '/new2.jpg', link: 0 }
+  { name: 'panorama view', color: 'lightcoral', position: [-10, 0, -10], url: '/Photosphere1.jpg', link: 5 }
+  
 ]
 
 function Dome({ name, position, texture, onClick }) {
@@ -42,11 +43,14 @@ function Portals() {
       <Dome onClick={() => set(link)} {...props} texture={maps[which]} />
       <Html position={[0, -1, 0]}>
         <div style={{ display: 'flex', gap: '10px', background: 'rgba(255,255,255,0.5)', padding: '5px', borderRadius: '5px' }}>
-          <button onClick={() => set(0)}>Outside</button>
-          <button onClick={() => set(1)}>Inside</button>
+        <button onClick={() => set(0)}>Inside</button>
+        <button onClick={() => set(4)}>Outside</button>
+          
+          <button onClick={() => set(1)}>Inside2</button>
+          
      
          
-          <button onClick={() => set(4)}>Panorama</button>
+           
     
         </div>
       </Html>
